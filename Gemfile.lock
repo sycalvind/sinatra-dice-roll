@@ -1,6 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    better_errors (2.10.1)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
+      rouge (>= 1.0.0)
+    binding_of_caller (1.0.1)
+      debug_inspector (>= 1.2.0)
+    debug_inspector (1.2.0)
+    erubi (1.13.1)
     multi_json (1.15.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
@@ -13,6 +21,7 @@ GEM
     rackup (1.0.1)
       rack (< 3)
       webrick
+    rouge (4.5.1)
     ruby2_keywords (0.0.5)
     sinatra (3.0.6)
       mustermann (~> 3.0)
@@ -32,6 +41,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   puma (~> 5.6.7)
   rackup (~> 1.0.1)
   sinatra (~> 3.0.6)

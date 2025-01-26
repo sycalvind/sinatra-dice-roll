@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Dice Roll</title>
-</head>
-
-<body>
-  <h1>1d20</h1>
-  <p><%= @outcome %></p>
-</body>
-</html>
+<h1>1d20</h1>
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
+<!-- 
+<% if @die == 1 %>
+  <p style="color: red"><%= @outcome %></p>
+<% elsif @die == 20 %>
+  <p style="color: green"><%= @outcome%></p>
+<% else %>
+  <p><%= @outcome%></p>
+<% end %>-->
